@@ -1,2 +1,2 @@
-# Programiranje-II
-Ispitni zadaci Programiranje 2
+# Programming C++ object-oriented
+Practice object-oriented programming
