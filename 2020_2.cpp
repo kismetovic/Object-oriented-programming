@@ -307,7 +307,6 @@ public:
         COUT << "Korisnik: " << obj._imePrezime << ". Email: " << obj._emailAdresa << ". Lozinka: " << obj._lozinka << endl;
         return COUT;
     }
-    virtual void info() = 0;
 };
 mutex m;
 class KaratePolaznik : public Korisnik{
@@ -323,7 +322,6 @@ class KaratePolaznik : public Korisnik{
         m.unlock();
     }
 public:
-    void info() {};
     KaratePolaznik(const char* imePrezime, string emailAdresa, string lozinka) : Korisnik(imePrezime, emailAdresa, lozinka){
     }
     KaratePolaznik(const KaratePolaznik& kp): Korisnik(kp) {
